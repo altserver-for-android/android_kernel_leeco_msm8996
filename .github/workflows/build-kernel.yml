@@ -18,7 +18,7 @@ jobs:
     - name: "Android kernel build"                    # Build kernel with lemniskett/android-kernel-actions.
       uses: lemniskett/android-kernel-actions@master
       with:
-        arch: arm64                                   # Specify arch
-        compiler: clang/11                            # Specify toolchain to use
-        defconfig: lineage_x2_defconfig               # Specify defconfig to use
-        image: Image.gz-dtb                           # Specify final build file
+        arch: arm64                                                    # Specify arch
+        compiler: aosp-clang/android11-release/clang-r365631c/binutils # Specify toolchain to use
+        defconfig: lineage_x2_defconfig                                # Specify defconfig to use
+        image: Image.gz-dtb                                            # Specify final build file
