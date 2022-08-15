@@ -1454,7 +1454,7 @@ static int get_kernel_cluster_info(int *cluster_id, cpumask_t *cluster_cpus)
 	return cluster_cnt;
 }
 
-static void update_cpu_topology(struct device *dev)
+static void __init update_cpu_topology(struct device *dev)
 {
 	int cluster_id[NR_CPUS] = {[0 ... NR_CPUS-1] = -1};
 	cpumask_t cluster_cpus[NR_CPUS];
