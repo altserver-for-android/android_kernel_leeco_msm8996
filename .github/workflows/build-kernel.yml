@@ -21,6 +21,6 @@ jobs:
       uses: lemniskett/android-kernel-actions@master
       with:
         arch: arm64                                   # Specify arch
-        compiler: clang/11                            # Specify toolchain to use
+        compiler: gcc/10                              # Specify toolchain to use
         defconfig: lineage_x2_defconfig               # Specify defconfig to use
         image: Image.gz-dtb                           # Specify final build file
