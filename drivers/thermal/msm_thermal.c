@@ -7598,7 +7598,7 @@ static int thermal_config_debugfs_read(struct seq_file *m, void *data)
 	return 0;
 }
 
-static int msm_thermal_dev_probe(struct platform_device *pdev)
+static int __init msm_thermal_dev_probe(struct platform_device *pdev)
 {
 	int ret = 0;
 	char *key = NULL;
