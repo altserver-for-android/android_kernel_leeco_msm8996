@@ -10,6 +10,8 @@ jobs:
     steps:
     - name: "Checkout kernel source"                  # Clone the kernel source.
       uses: actions/checkout@v2
+      with:
+          ref: lineage-18.1
     - name: "Checkout zipper"                         # (OPTIONAL) Clone the AnyKernel3 template.
       uses: actions/checkout@v2
       with:
